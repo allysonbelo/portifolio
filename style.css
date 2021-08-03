@@ -15,8 +15,12 @@
     --font-action: "Mulish", serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .hamburguer {
@@ -609,11 +613,11 @@ footer {
     color: #a044ff;
 }
 
-.social-list ul{
+.social-list ul {
     display: flex;
 }
 
-#link-top{
+#link-top {
     position: fixed;
     right: 3rem;
     bottom: 3rem;
@@ -628,4 +632,109 @@ footer {
     color: white;
     border-radius: .3rem;
     box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .4);
+}
+
+
+@media screen and (max-width: 700px) {
+    .conhecimentos {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .conhecimento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 20px;
+    }
+
+    .conhecimneto-text {
+        text-align: center;
+    }
+
+    .conhecimento-img-wrapper {
+        display: none;
+    }
+
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .contato-wrapper {
+        width: 100%;
+        height: 35rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, .5);
+    }
+
+    .contato-left {
+        display: none;
+    }
+
+    .contato-right {
+        width: 70%;
+        background-color: #eee;
+    }
+
+    .orcamento-wrapper {
+        width: 90%;
+        height: 100vh;
+        background-color: #ffffff99;
+        border-radius: 10px;
+        box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.5);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sessao-orcamento h1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .sessao-orcamento form {
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .footer-content {
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content p{
+        text-align: center;
+    }
+
+    .social-list{
+        margin-bottom: 2rem;
+    }
 }
